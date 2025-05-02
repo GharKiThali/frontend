@@ -2,9 +2,6 @@ import axios from 'axios';
 
 const axiosInstance = axios.create({
   baseURL: 'https://backend-a5nn.onrender.com', // Backend URL
-  headers: {
-    'Content-Type': 'application/json',
-  },
   withCredentials: true, // Cookies ko bhejne ke liye
 });
 

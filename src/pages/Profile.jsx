@@ -10,7 +10,7 @@ const Profile = () => {
 
     const fetchUserProfile = async () => {
       try {
-        const response = await axiosInstance.get('/profile/getUser',{withCredentials:true});
+        const response = await axiosInstance.get('/profile/getUser');
         console.log(response);
         setUser(response.data.user);
       } catch (error) {
