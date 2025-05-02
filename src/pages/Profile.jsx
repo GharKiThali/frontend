@@ -24,7 +24,6 @@ const Profile = () => {
   const handleLogout = async () => {
     try {
        
-        localStorage.removeItem('token');  
         window.location.href = '/';   
     } catch (error) {
         console.error('Logout Error:', error);

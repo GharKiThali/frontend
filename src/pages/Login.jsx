@@ -21,15 +21,12 @@ const LoginPage = () => {
     setMessage(''); // Reset old message
 
     try {
-      const response = await axiosInstance.post('/user/login', formData, {
-        headers: { 'Content-Type': 'application/json' },
-      });
+      const response = await axiosInstance.post('/user/login', formData);
 
       if (response.data) {
         const { token } = response.data;
 
         if (token) {
-          localStorage.setItem('token', token);
           setMessage('Login successful!');
           setMessageType('success');
           setTimeout(() => navigate('/'), 1500); // 1.5 sec baad redirect
