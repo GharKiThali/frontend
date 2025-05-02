@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { FaUser } from 'react-icons/fa';
+import axiosInstance from '../instant/axios';
 
 
 const Header = () => {
