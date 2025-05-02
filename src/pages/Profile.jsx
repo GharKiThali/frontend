@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axiosInstance from '../instant/axios';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 
 const Profile = () => {
   const [user, setUser] = useState(null);
@@ -21,26 +22,18 @@ const Profile = () => {
   }, []);
 
 
-  const handleLogout = async () => {
+  
+
+ 
+/////   for  backend logout
+const handleLogout = async () => {
     try {
-       
+        await axiosInstance.get('/profile/logout',{ withCredentials: true });
         window.location.href = '/';   
     } catch (error) {
         console.error('Logout Error:', error);
     }
 };
-
- 
-/////   for  backend logout
-// const handleLogout = async () => {
-//     try {
-//         await axiosInstance.post('/profile/logout', {}, { withCredentials: true });
-//         localStorage.removeItem('token');  
-//         window.location.href = '/';   
-//     } catch (error) {
-//         console.error('Logout Error:', error);
-//     }
-// };
   
 
 
