@@ -27,7 +27,7 @@ const LoginPage = () => {
         const { token } = response.data;
 
         if (token) {
-          localStorage.setItem('token', true); // Token ko local storage mein store karna
+         // localStorage.setItem('token', true); // Token ko local storage mein store karna
           setMessage('Login successful!');
           setMessageType('success');
           setTimeout(() => navigate('/'), 1500); // 1.5 sec baad redirect
