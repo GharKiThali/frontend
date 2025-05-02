@@ -9,7 +9,7 @@ const Header = () => {
   const [scrollTop, setScrollTop] = useState(0);
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const isLoggedIn = localStorage.getItem('token');
+  // const isLoggedIn = localStorage.getItem('token');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,7 +23,18 @@ const Header = () => {
   }, [scrollTop]);
 
   const isAtTop = scrollTop < 10;
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
+  useEffect(() => {
+    axiosInstance.get('/user/validate', { withCredentials: true })
+      .then(res => {
+        if (res.data.isLoggedIn) {
+          setIsLoggedIn(true);
+        }
+      })
+      .catch(() => setIsLoggedIn(false));
+  }, []);
+  
   return (
     <header
       className={`z-50 fixed w-full py-2 transition-all duration-300 

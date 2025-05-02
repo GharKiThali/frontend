@@ -29,6 +29,7 @@ const Profile = () => {
 const handleLogout = async () => {
     try {
         await axiosInstance.get('/profile/logout',{ withCredentials: true });
+        localStorage.setItem('token', false); // Clear the token from local storage
         window.location.href = '/';   
     } catch (error) {
         console.error('Logout Error:', error);
