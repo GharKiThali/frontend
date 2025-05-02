@@ -68,7 +68,7 @@ const Header = () => {
                 className={`relative overflow-hidden px-6 py-2 rounded-full transition duration-300
               ${isAtTop ? 'bg-transparent text-white border border-white hover:bg-white hover:text-black' : 'bg-white text-black border border-white hover:bg-transparent hover:text-white'}`}
               >
-                <span className='relative z-10 text-lg'>Login</span>
+                <span className='... relative z-10 text-lg'>Login</span>
               </a>
               
             )}
