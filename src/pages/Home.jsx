@@ -15,12 +15,12 @@ const slides = [
     text: 'Kindness is a powerful force. A simple smile, gentle words, or helpful act can uplift spirits, create hope, and inspire others.',
   },
   {
-    bg: '../src/assets/home.jpg',
+    bg: 'https://res.cloudinary.com/dyvccryuz/image/upload/v1746259324/home_btdhj7.jpg',
     title: 'Empower Change',
     text: 'Empowering change begins with belief—in ourselves and others. Through collective action, compassion, and courage, we can transform lives, challenge injustice, and build a brighter future.',
   },
   {
-    bg: 'https://images.pexels.com/photos/296301/pexels-photo-296301.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    bg: 'https://res.cloudinary.com/dyvccryuz/image/upload/v1746259327/education_dz4dcf.png',
     title: 'Support Education',
     text: 'Supporting education unlocks potential, bridges gaps, and fosters equality. By investing in knowledge, we empower individuals to create positive change, shaping a better tomorrow for all.',
   },
@@ -90,7 +90,7 @@ const Home = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 10000);
+    }, 5000);
     return () => clearInterval(interval);
   }, []);
 
@@ -174,7 +174,7 @@ const Home = () => {
               <div className='bg-white rounded-lg shadow-md overflow-hidden flex flex-col items-center'>
                 <img
                   className='h-48 w-full object-cover hover:scale-[1.1] transition duration-300'
-                  src="https://images.pexels.com/photos/1205651/pexels-photo-1205651.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                  src="https://res.cloudinary.com/dyvccryuz/image/upload/v1746258778/photo17_ljomim.jpg"
                   alt="Support Education"
                 />
                 <div className='p-4'>
@@ -189,7 +189,7 @@ const Home = () => {
               <div className='bg-white rounded-lg shadow-md overflow-hidden flex flex-col items-center'>
                 <img
                   className='h-48 w-full object-cover hover:scale-110 transition duration-300'
-                  src="https://images.pexels.com/photos/1350560/pexels-photo-1350560.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                  src="https://res.cloudinary.com/dyvccryuz/image/upload/v1746258778/photo16_osxlpx.jpg"
                   alt="Healthcare Aid"
                 />
                 <div className='p-4'>
@@ -205,7 +205,7 @@ const Home = () => {
               <div className='bg-white rounded-lg shadow-md overflow-hidden flex flex-col items-center'>
                 <img
                   className='h-48 w-full object-cover hover:scale-[1.1] transition duration-300'
-                  src="https://images.pexels.com/photos/6590920/pexels-photo-6590920.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                  src="https://res.cloudinary.com/dyvccryuz/image/upload/v1746258778/photo9_c2ukbt.jpg"
                   alt="Feed the Hungry"
                 />
                 <div className='p-4'>
@@ -220,7 +220,7 @@ const Home = () => {
               <div className='bg-white rounded-lg shadow-md overflow-hidden flex flex-col items-center'>
                 <img
                   className='h-48 w-full object-cover hover:scale-[1.1] transition duration-300'
-                  src="https://plus.unsplash.com/premium_photo-1683140535496-101478a22e75?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  src="https://res.cloudinary.com/dyvccryuz/image/upload/v1746258776/photo1_blwial.jpg"
                   alt="Disaster Relief"
                 />
                 <div className='p-4'>
@@ -235,7 +235,7 @@ const Home = () => {
               <div className='bg-white rounded-lg shadow-md overflow-hidden flex flex-col items-center'>
                 <img
                   className='h-48 w-full object-cover hover:scale-[1.1] transition duration-300'
-                  src="https://images.unsplash.com/photo-1547937084-4d587301a545?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  src="https://res.cloudinary.com/dyvccryuz/image/upload/v1746258777/photo2_xov8qg.jpg"
                   alt="Women Empowerment"
                 />
                 <div className='p-4'>
@@ -250,7 +250,7 @@ const Home = () => {
               <div className='bg-white rounded-lg shadow-md overflow-hidden flex flex-col items-center'>
                 <img
                   className='h-48 w-full object-cover hover:scale-[1.1] transition duration-300'
-                  src="https://plus.unsplash.com/premium_photo-1681140560926-ea741789469a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  src="https://res.cloudinary.com/dyvccryuz/image/upload/v1746258777/photo13_idz2pi.jpg"
                   alt="Save Environment"
                 />
                 <div className='p-4'>
@@ -298,7 +298,7 @@ const Home = () => {
         <div className="min-h-[50vh] w-full flex flex-col md:flex-row justify-center items-center bg-[#071243] mb-2">
 
           {/* Text Side */}
-          <div className="w-full md:w-[50%] h-full flex flex-col justify-center px-[5vw]">
+          <div className="w-full md:w-[50%] h-full flex flex-col justify-center px-[5vw] py-4">
             <h1 className="text-3xl md:text-4xl text-white font-serif mb-4 md:text-left">
               Our <span className="text-[#335288]">Dedicated Hands,</span><br /> Transforming Lives Together
             </h1>
@@ -309,7 +309,7 @@ const Home = () => {
 
           {/* Image Side */}
           <div className="w-full md:w-[50%] h-full flex justify-center md:justify-end">
-            <img className="h-[60vh] object-contain" src="../src/assets/volunteer.png" alt="" />
+            <img className="h-[60vh] object-contain" src="https://res.cloudinary.com/dyvccryuz/image/upload/v1746259327/volunteer_a8negb.png" alt="" />
           </div>
 
         </div>
@@ -322,42 +322,27 @@ const Home = () => {
 
           <div className="flex flex-col sm:flex-row items-center">
 
-            {/* <input
-        className="h-12 w-[80vw] sm:w-[20vw] border border-zinc-500 outline-none rounded-tl-xl px-2 bg-white"
-        type="email"
-        placeholder="Enter your mail"
-      />
-      <button
-        type="submit"
-        className="h-12 w-[40vw] sm:w-[6vw] bg-[#335288] text-lg font-serif rounded-br-xl text-white"
-        onClick={() => {
-          alert("Mail received! We will contact you soon");
-          window.location.reload();
-        }}
-      >
-        Send
-      </button> */}
-
             <form onSubmit={handleSubmit} >
               
 
-              <input
-                type="email"
-                name="email"
-                 className="h-12 w-[80vw] sm:w-[20vw] border border-zinc-500 outline-none rounded-tl-xl px-2 bg-white"
-        
-                placeholder="Enter your email"
-                value={formData.email}
-                onChange={handleChange}
-                // className="w-full p-2 mb-4 border rounded"
-                required
-              />
-              <button
-                type="submit"
-               className="h-12 w-[40vw] sm:w-[6vw] bg-[#335288] text-lg font-serif rounded-br-xl text-white"
-              >
-                Submit
-              </button>
+            <div className="flex flex-wrap sm:flex-nowrap w-full">
+  <input
+    type="email"
+    name="email"
+    className="h-12 flex-1 min-w-70 border border-zinc-500 outline-none sm:rounded-tl-xl px-2 bg-white"
+    placeholder="Enter your email"
+    value={formData.email}
+    onChange={handleChange}
+    required
+  />
+  <button
+    type="submit"
+    className="h-12 w-full sm:w-auto px-4 bg-[#335288] text-lg font-serif rounded-br-xl sm:rounded-bl-none text-white"
+  >
+    Submit
+  </button>
+</div>
+
             </form>
 
           </div>
@@ -372,7 +357,7 @@ const Home = () => {
         {/* Left big image */}
         <div className="relative h-[30vh] md:h-[53vh] w-full md:w-[25%] overflow-hidden group">
           <img
-            src="https://images.unsplash.com/photo-1599461149326-2e9dd1113a02?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src="https://res.cloudinary.com/dyvccryuz/image/upload/v1746258778/photo8_igrw89.jpg"
             alt=""
             className="h-full w-full object-cover transform group-hover:scale-110 transition-all duration-500"
           />
@@ -391,7 +376,7 @@ const Home = () => {
             {/* Small image */}
             <div className="relative h-[30vh] md:h-[25vh] w-full md:w-[20vw] overflow-hidden group">
               <img
-                src="https://plus.unsplash.com/premium_photo-1679517155804-d166513ccc9b?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="https://res.cloudinary.com/dyvccryuz/image/upload/v1746258779/photo23_m0mmu8.jpg"
                 alt=""
                 className="h-full w-full object-cover transform group-hover:scale-110 transition-all duration-500"
               />
@@ -460,10 +445,10 @@ const Home = () => {
 
         <div className="flex flex-wrap justify-center items-center gap-8 mb-25">
           {/* Card 1 */}
-          <div className="h-auto w-full sm:w-[80%] md:w-[45%] lg:w-[28%] flex flex-col items-center hover:rotate-6 transition-all duration-300">
+          <div className="h-auto w-full sm:w-[80%] md:w-[45%] lg:w-[28%] flex flex-col items-center">
             <img
-              className="w-full h-[250px] object-cover rounded-md"
-              src="https://images.pexels.com/photos/1151418/pexels-photo-1151418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              className="w-full h-[250px] object-cover rounded-md hover:rotate-6 transition-all duration-300"
+              src="https://res.cloudinary.com/dyvccryuz/image/upload/v1746258776/photo12_i7kftb.jpg"
               alt="Plant Trees"
             />
             <div className="flex justify-around items-center w-full my-4">
@@ -476,10 +461,10 @@ const Home = () => {
           </div>
 
           {/* Card 2 */}
-          <div className="h-auto w-full sm:w-[80%] md:w-[45%] lg:w-[28%] flex flex-col pb-10 items-center hover:rotate-6 transition-all duration-300">
+          <div className="h-auto w-full sm:w-[80%] md:w-[45%] lg:w-[28%] flex flex-col pb-10 items-center">
             <img
-              className="w-full h-[250px] object-cover rounded-md"
-              src="https://images.pexels.com/photos/459728/pexels-photo-459728.jpeg?auto=compress&cs=tinysrgb&w=600"
+              className="w-full h-[250px] object-cover rounded-md hover:rotate-6 transition-all duration-300"
+              src="https://res.cloudinary.com/dyvccryuz/image/upload/v1746258779/photo19_yaqpxi.jpg"
               alt="Awareness Campaign"
             />
             <div className="flex justify-around items-center w-full my-4">
@@ -492,10 +477,10 @@ const Home = () => {
           </div>
 
           {/* Card 3 */}
-          <div className="h-auto w-full sm:w-[80%] md:w-[45%] lg:w-[28%] flex flex-col items-center hover:rotate-6 transition-all duration-300">
+          <div className="h-auto w-full sm:w-[80%] md:w-[45%] lg:w-[28%] flex flex-col items-center">
             <img
-              className="w-full h-[250px] object-cover rounded-md"
-              src="https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              className="w-full h-[250px] object-cover rounded-md hover:rotate-6 transition-all duration-300"
+              src="https://res.cloudinary.com/dyvccryuz/image/upload/v1746258777/photo5_vi1ugb.jpg"
               alt="Forest Conservation"
             />
             <div className="flex justify-around items-center w-full my-4">

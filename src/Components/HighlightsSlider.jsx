@@ -12,7 +12,7 @@ export default function HighlightsSlider() {
       description: "In Bhopal we give education to the children.",
       light: "250+ Children",
       follow: "Follow us on-",
-      image: "../src/assets/education.png",
+      image: "https://res.cloudinary.com/dyvccryuz/image/upload/v1746259327/education_dz4dcf.png",
     },
     {
       bg: "bg-[#ebebeb]",
@@ -20,7 +20,7 @@ export default function HighlightsSlider() {
       description: "We plant more than 1150+ trees for green revolution.",
       light: "1150+ Plants",
       follow: "Follow us on-",
-      image: "https://images.unsplash.com/photo-1708592956177-d29b4b4ce348?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "https://res.cloudinary.com/dyvccryuz/image/upload/v1746258776/photo12_i7kftb.jpg",
     },
     {
       bg: "bg-[#ebebeb]",
@@ -28,7 +28,7 @@ export default function HighlightsSlider() {
       description: "Thrive to support women for equality and independency.",
       light: "12+ Meetings",
       follow: "Follow us on-",
-      image: "https://images.unsplash.com/photo-1573569890671-66f5f5788499?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "https://res.cloudinary.com/dyvccryuz/image/upload/v1746258777/photo2_xov8qg.jpg",
     },
     {
       bg: "bg-[#ebebeb]",
@@ -36,7 +36,7 @@ export default function HighlightsSlider() {
       description: "Run campaign against Aids, HIV, Malaria, Dengue, etc.",
       light: "25+ Camps",
       follow: "Follow us on-",
-      image: "https://images.unsplash.com/photo-1594256347468-5cd43df8fbaf?q=80&w=2058&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "https://res.cloudinary.com/dyvccryuz/image/upload/v1746258776/photo3_kduras.jpg",
     },
     {
       bg: "bg-[#ebebeb]",
@@ -44,7 +44,7 @@ export default function HighlightsSlider() {
       description: "Make people aware about social responsibility.",
       light: "17+ Campaigns",
       follow: "Follow us on-",
-      image: "https://images.unsplash.com/photo-1560220604-1985ebfe28b1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "https://res.cloudinary.com/dyvccryuz/image/upload/v1746258777/photo15_noyibr.jpg",
     },
     {
       bg: "bg-[#ebebeb]",
@@ -59,7 +59,7 @@ export default function HighlightsSlider() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
-    }, 5000);
+    }, 1000);
     return () => clearInterval(interval);
   }, [slides.length]);
 

@@ -6,35 +6,35 @@ const team = [
   {
     name: "Vikram Rana",
     role: "Founder & Visionary",
-    image: "../src/assets/vikku.jpg",
+    image: "https://res.cloudinary.com/dyvccryuz/image/upload/v1746259327/vikku_fi4q4j.jpg",
     email: "vikramrana224400.com@gmail.com",
     linkedin: "https://linkedin.com/in/vikramrana"
   },
   {
     name: "Anand Singh Chouhan",
     role: "Co-Founder & Tech Lead",
-    image: "../src/assets/nandu.png",
+    image: "https://res.cloudinary.com/dyvccryuz/image/upload/v1746259324/nandu_lfx39s.png",
     email: "ankeshbarahdiya05112002@gmail.com",
     linkedin: "https://www.linkedin.com/in/ankesh-barahdiya-8704142b6"
   },
   {
     name: "Naitik Singh",
     role: "Co-Founder & Tech Lead",
-    image: "../src/assets/raftaar.png",
+    image: "https://res.cloudinary.com/dyvccryuz/image/upload/v1746259326/raftaar_snsbk4.png",
     email: "ankeshbarahdiya05112002@gmail.com",
     linkedin: "https://www.linkedin.com/in/ankesh-barahdiya-8704142b6"
   },
   {
     name: "Ankesh Barhadiya",
     role: "Co-Founder & Tech Lead",
-    image: "../src/assets/Anku.jpg",
+    image: "https://res.cloudinary.com/dyvccryuz/image/upload/v1746259326/Anku_so4got.jpg",
     email: "ankeshbarahdiya05112002@gmail.com",
     linkedin: "https://www.linkedin.com/in/ankesh-barahdiya-8704142b6"
   },
   {
     name: "Deepti Lodhi",
     role: "Co-Founder & Tech Lead",
-    image: "../src/assets/deep.jpg",
+    image: "https://res.cloudinary.com/dyvccryuz/image/upload/v1746259323/deep_y2fnz6.jpg",
     email: "lodhideepti@gmail.com",
     linkedin: "https://www.linkedin.com/in/deeptee-lodhi-0881a0260"
   },

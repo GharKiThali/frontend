@@ -16,7 +16,7 @@ const projectsData = [
     category: "Education",
     title: "School for Underprivileged",
     status: "Running",
-    image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=2132&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "https://res.cloudinary.com/dyvccryuz/image/upload/v1746258778/photo17_ljomim.jpg",
     rating: 4.8,
     scale: "500+ Students",
   },
@@ -25,7 +25,7 @@ const projectsData = [
     category: "Health",
     title: "Free Medical Camps",
     status: "Completed",
-    image: "https://images.unsplash.com/photo-1621091464290-48a70e17d8cb?q=80&w=1922&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "https://res.cloudinary.com/dyvccryuz/image/upload/v1746258778/photo16_osxlpx.jpg",
     rating: 4.9,
     scale: "1000+ People",
   },
@@ -52,7 +52,7 @@ const projectsData = [
     category: "Environment Conservation",
     title: "Tree Plantation Drive",
     status: "Completed",
-    image: "https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "https://res.cloudinary.com/dyvccryuz/image/upload/v1746258779/photo23_m0mmu8.jpg",
     rating: 4.9,
     scale: "10,000+ Trees",
   },
@@ -61,7 +61,7 @@ const projectsData = [
     category: "Social Welfare",
     title: "Clean & Green India",
     status: "Running",
-    image: "https://images.unsplash.com/flagged/photo-1574380555089-06f915e8c074?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "https://res.cloudinary.com/dyvccryuz/image/upload/v1746258778/photo9_c2ukbt.jpg",
     rating: 4.8,
     scale: "50+ Centers",
   },
@@ -88,7 +88,7 @@ const projectsData = [
     category: "Environment Conservation",
     title: "Deforestation Camps",
     status: "Completed",
-    image: "https://plus.unsplash.com/premium_photo-1678837404784-03b46dd101c2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "https://res.cloudinary.com/dyvccryuz/image/upload/v1746258776/photo12_i7kftb.jpg",
     rating: 4.8,
     scale: "50+ Centers",
   },
@@ -97,7 +97,7 @@ const projectsData = [
     category: "Environment Conservation",
     title: "Plant Trees",
     status: "Running",
-    image: "https://plus.unsplash.com/premium_photo-1681140560906-4610ee700d1b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "https://res.cloudinary.com/dyvccryuz/image/upload/v1746258777/photo13_idz2pi.jpg",
     rating: 4.8,
     scale: "50+ Centers",
   },
@@ -124,7 +124,7 @@ const projectsData = [
     category: "Health",
     title: "Health Collab with Aaganwadi",
     status: "Running",
-    image: "https://media.istockphoto.com/id/1614139269/photo/indian-doctor-with-syringe-or-medical-injection-in-hand-little-kid-boy-patient-at-village.jpg?s=2048x2048&w=is&k=20&c=nhNvi1lJPfISKqI_n_0wHvmAGdBbmuqpRCNI6ol_wiA=",
+    image: "https://res.cloudinary.com/dyvccryuz/image/upload/v1746258776/photo1_blwial.jpg",
     rating: 4.9,
     scale: "1000+ People",
   },
@@ -133,7 +133,7 @@ const projectsData = [
     category: "Women Empowerment",
     title: "Awareness for Safety",
     status: "Completed",
-    image: "https://images.unsplash.com/photo-1551731409-43eb3e517a1a?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "https://res.cloudinary.com/dyvccryuz/image/upload/v1746258777/photo2_xov8qg.jpg",
     rating: 4.7,
     scale: "300+ Women",
   },
@@ -242,14 +242,28 @@ const ProjectsPage = () => {
 
   <div className="columns-1 sm:columns-2 md:columns-3 gap-4 space-y-4">
     {[
-      "https://plus.unsplash.com/premium_photo-1693222205729-05d9197b5e1f?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://plus.unsplash.com/premium_photo-1693222205233-bb5d87674652?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://plus.unsplash.com/premium_photo-1677180777888-cca28bbd1365?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://plus.unsplash.com/premium_photo-1677180478097-d4b75c3ecfa1?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://plus.unsplash.com/premium_photo-1677180478097-d4b75c3ecfa1?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://plus.unsplash.com/premium_photo-1677180478097-d4b75c3ecfa1?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://images.pexels.com/photos/5686019/pexels-photo-5686019.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      "https://images.pexels.com/photos/5686019/pexels-photo-5686019.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://res.cloudinary.com/dyvccryuz/image/upload/v1746258778/photo17_ljomim.jpg",
+      "https://res.cloudinary.com/dyvccryuz/image/upload/v1746258777/photo2_xov8qg.jpg",
+      "https://res.cloudinary.com/dyvccryuz/image/upload/v1746258776/photo3_kduras.jpg",
+      "https://res.cloudinary.com/dyvccryuz/image/upload/v1746258779/photo4_axjnmy.jpg",
+      "https://res.cloudinary.com/dyvccryuz/image/upload/v1746258777/photo5_vi1ugb.jpg",
+      "https://res.cloudinary.com/dyvccryuz/image/upload/v1746258777/photo6_ocgh8f.jpg",
+      "https://res.cloudinary.com/dyvccryuz/image/upload/v1746258777/photo7_z6v7ed.jpg",
+      "https://res.cloudinary.com/dyvccryuz/image/upload/v1746258778/photo8_igrw89.jpg",
+      "https://res.cloudinary.com/dyvccryuz/image/upload/v1746258778/photo9_c2ukbt.jpg",
+      "https://res.cloudinary.com/dyvccryuz/image/upload/v1746258778/photo10_lxgjpx.jpg",
+      "https://res.cloudinary.com/dyvccryuz/image/upload/v1746258778/photo11_mfrchm.jpg",
+      "https://res.cloudinary.com/dyvccryuz/image/upload/v1746258776/photo12_i7kftb.jpg",
+      "https://res.cloudinary.com/dyvccryuz/image/upload/v1746258777/photo13_idz2pi.jpg",
+      "https://res.cloudinary.com/dyvccryuz/image/upload/v1746258777/photo14_kthtqb.jpg",
+      "https://res.cloudinary.com/dyvccryuz/image/upload/v1746258777/photo15_noyibr.jpg",
+      "https://res.cloudinary.com/dyvccryuz/image/upload/v1746258778/photo16_osxlpx.jpg",
+      "https://res.cloudinary.com/dyvccryuz/image/upload/v1746258778/photo17_ljomim.jpg",
+      "https://res.cloudinary.com/dyvccryuz/image/upload/v1746258779/photo18_jnqnw7.jpg",
+      "https://res.cloudinary.com/dyvccryuz/image/upload/v1746258779/photo19_yaqpxi.jpg",
+      "https://res.cloudinary.com/dyvccryuz/image/upload/v1746258779/photo20_e1var1.jpg",
+      "https://res.cloudinary.com/dyvccryuz/image/upload/v1746258779/photo21_rbv6ny.jpg",
+      "https://res.cloudinary.com/dyvccryuz/image/upload/v1746258779/photo22_fdfdic.jpg",
     ].map((src, index) => (
       <div
         key={index}
@@ -271,7 +285,7 @@ const ProjectsPage = () => {
 
   <img
     className="w-[80%] max-w-[800px] object-contain z-10"
-    src="../src/assets/project.png"
+    src="https://res.cloudinary.com/dyvccryuz/image/upload/v1746259327/project_yjyfdq.png"
     alt="Project"
   />
 </div>

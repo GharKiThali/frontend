@@ -5,34 +5,34 @@ import "slick-carousel/slick/slick-theme.css";
 
 const reviews = [
   {
-    name: "Ravi Kumar",
-    role: "Volunteer",
+    name: "Narayan Kumar",
+    role: "Member",
     message: "An inspiring organization with a heart for real change.",
-    img: "https://randomuser.me/api/portraits/men/32.jpg",
+    img: "https://res.cloudinary.com/dyvccryuz/image/upload/v1746259324/NaveenShrivastav_c7sa0p.jpg",
   },
   {
-    name: "Anjali Sharma",
+    name: "Anand Chauhan",
     role: "Donor",
     message: "Proud to be a supporter. Aviyukt's transparency is remarkable.",
-    img: "https://randomuser.me/api/portraits/women/44.jpg",
+    img: "https://res.cloudinary.com/dyvccryuz/image/upload/v1746259324/nandu_lfx39s.png",
   },
   {
-    name: "Priya Sinha",
-    role: "Member",
+    name: "Vikram Rana",
+    role: "Doner",
     message: "Joining Aviyukt was the best decision — it feels like family!",
-    img: "https://randomuser.me/api/portraits/women/68.jpg",
+    img: "https://res.cloudinary.com/dyvccryuz/image/upload/v1746259327/vikku_fi4q4j.jpg",
   },
   {
-    name: "Amit Verma",
+    name: "Ankesh",
     role: "Beneficiary",
     message: "Our lives changed because Aviyukt believed in us.",
-    img: "https://randomuser.me/api/portraits/men/75.jpg",
+    img: "https://res.cloudinary.com/dyvccryuz/image/upload/v1746259326/Anku_so4got.jpg",
   },
   {
-    name: "Kavita Mehra",
-    role: "Volunteer",
+    name: "Shukriti Shirvastava",
+    role: "Member",
     message: "Incredible experience, true community empowerment!",
-    img: "https://randomuser.me/api/portraits/women/21.jpg",
+    img: "https://res.cloudinary.com/dyvccryuz/image/upload/v1746259327/Shukrantishrivastava_vp5dmh.jpg",
   },
 ];
 

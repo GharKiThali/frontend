@@ -12,6 +12,8 @@ import Register from './pages/Register';
 import Policy from './pages/Policy';
 import Credits from './pages/Credits';
 import ForgotForm from './pages/ForgotForm';
+import PayHistory from './pages/PayHistory';
+
 
 const App = () => {
   return (
@@ -28,6 +30,8 @@ const App = () => {
         <Route path="/policy" element={<Policy/>} />
         <Route path="/Credits" element={<Credits/>} />
         <Route path="/forgot-password" element={<ForgotForm/>} />
+        <Route path="/payhistory" element={<PayHistory/>} />
+        
       </Routes>
       <Footer/>
     </>
