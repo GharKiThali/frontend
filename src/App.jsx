@@ -12,7 +12,7 @@ import Register from './pages/Register';
 import Policy from './pages/Policy';
 import Credits from './pages/Credits';
 import ForgotForm from './pages/ForgotForm';
-import PayHistory from './pages/PayHistory';
+import PayHistory from './pages/PayHistory.jsx';
 
 
 const App = () => {
