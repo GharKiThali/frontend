@@ -20,6 +20,7 @@ const faqs = [
 ];
 
 const Highlights = () => {
+  
   const [formType, setFormType] = useState("donor");
   const [form, setForm] = useState({
     amount: "",
@@ -34,6 +35,7 @@ const Highlights = () => {
     pincode: "",
     gender: "",
   });
+console.log(import.meta.env.VITE_RAZORPAY_KEY_ID)
 
   const [formErrors, setFormErrors] = useState({});
   const [paymentMessage, setPaymentMessage] = useState({ type: "", text: "" });
@@ -134,8 +136,11 @@ const Highlights = () => {
       const res = await axios.post("/razorpay/paymentcreate", payload);
       const { id, amount, currency } = res.data.order;
 
+      
+      
+
       const options = {
-        key: "rzp_test_jEEqxldDfUrqh7",
+        key:import.meta.env.VITE_RAZORPAY_KEY_ID?.trim(),
         amount: amount.toString(),
         currency,
         name: "Aviyukt NGO",
@@ -144,12 +149,13 @@ const Highlights = () => {
         order_id: id,
         handler: async function (response) {
           try {
-            await axios.post("/razorpay/paymentverify", {
+            const res= await axios.post("/razorpay/paymentverify", {
               razorpayOrderId: response.razorpay_order_id,
               razorpayPaymentId: response.razorpay_payment_id,
               signature: response.razorpay_signature,
             });
 
+            console.log(res.data);
             setPaymentClip({
               ...payload,
               paymentId: response.razorpay_payment_id,
@@ -216,6 +222,7 @@ const Highlights = () => {
           <p className="text-lg w-[50%] text-center mx-auto">Your small contribution can bring a big change. Support our cause and help transform lives through kindness, education, and hope. Every donation counts. Together, we make a difference.</p>
         </div>
       </div>
+      
 
       {/* Toggle */}
       <div className="flex justify-center gap-4 mt-10">
