@@ -388,12 +388,22 @@ console.log(import.meta.env.VITE_RAZORPAY_KEY_ID)
             </button>
           </form>
         ) : (
-          <div className="bg-green-100 text-green-700 p-4 rounded shadow text-sm">
-            <h3 className="font-semibold mb-2">{paymentClip.message}</h3>
+          <div className="bg-white p-6 rounded-xl shadow-md text-gray-800 max-w-xl mx-auto font-sans relative border border-gray-200">
+          {/* Logo */}
+          <div className="flex justify-center mb-4">
+            <img className="w-24" src="https://res.cloudinary.com/dyvccryuz/image/upload/v1746258864/My%20Brand/logo_jo4h7x.png" alt="Logo" />
+          </div>
+        
+          {/* Message */}
+          <h3 className="text-lg font-bold mb-3 text-center">{paymentClip.message}</h3>
+        
+          {/* Main Details */}
+          <div className="space-y-1 text-sm">
             <p><b>Name:</b> {paymentClip.name}</p>
             <p><b>Email:</b> {paymentClip.email}</p>
             <p><b>Amount:</b> ₹{paymentClip.amount}</p>
             <p><b>Aadhar:</b> {paymentClip.adhar}</p>
+        
             {formType === "donor" ? (
               <p><b>Address:</b> {paymentClip.address}</p>
             ) : (
@@ -406,9 +416,28 @@ console.log(import.meta.env.VITE_RAZORPAY_KEY_ID)
                 <p><b>Pincode:</b> {paymentClip.pincode}</p>
               </>
             )}
+        
             <p><b>Payment ID:</b> {paymentClip.paymentId}</p>
             <p><b>Order ID:</b> {paymentClip.orderId}</p>
           </div>
+        
+          {/* Certificate Numbers */}
+          <div className="border-t mt-4 pt-3 text-xs text-gray-600">
+            <p><b>12AB:</b> AAPAA3852N23BP01</p>
+            <p><b>80G:</b> AAPAA3852N23BP02</p>
+          </div>
+        
+          {/* Download Button */}
+          <div className="flex justify-center mt-5">
+            <button
+              onClick={() => window.print()}
+              className="bg-[#335288] text-white px-5 py-2 rounded-md hover:bg-blue-400 transition text-sm font-medium shadow"
+            >
+              Download Receipt
+            </button>
+          </div>
+        </div>
+      
         )}
 
         {paymentMessage.text && (

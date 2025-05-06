@@ -37,7 +37,7 @@ const Footer = () => {
           <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
           <ul className="space-y-3 text-sm text-gray-700">
             <li className="flex items-center gap-3">
-              <Phone size={18} /> +91 9876543210
+              <Phone size={18} /> +91 8770321854
             </li>
             <li className="flex items-center gap-3">
               <Mail size={18} /> aviyuktngo@gmail.com
@@ -78,9 +78,9 @@ const Footer = () => {
 
         {/* Social Icons */}
         <div className="flex gap-4">
-          <a href=""><i className="px-2.5 py-2 border-1 text-xl rounded-full text-[#335288] fa-brands fa-instagram"></i></a>
-          <a href=""><i className="px-3 py-2 border-1 text-xl rounded-full text-[#335288] fa-brands fa-facebook-f"></i></a>
-          <a href=""><i className="p-2 border-1 text-xl rounded-full text-[#335288] fa-brands fa-youtube"></i></a>
+          <a href="https://www.instagram.com/aviyukt_samaja_sevi_sansthan?utm_source=qr&igsh=NWR1c2t0ZnYwOTNi "><i className="px-2.5 py-2 border-1 text-xl rounded-full text-[#335288] fa-brands fa-instagram"></i></a>
+          <a href="https://www.facebook.com/share/18ykXqs2ca/"><i className="px-3 py-2 border-1 text-xl rounded-full text-[#335288] fa-brands fa-facebook-f"></i></a>
+          <a href="http://www.youtube.com/@Aviyuktngo"><i className="p-2 border-1 text-xl rounded-full text-[#335288] fa-brands fa-youtube"></i></a>
         </div>
       </div>
     </footer>
