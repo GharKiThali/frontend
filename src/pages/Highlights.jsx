@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import axios from "../instant/axios";
 import { ChevronDownIcon } from "@heroicons/react/solid";
-import { Link } from "react-router-dom";
 
 // FAQs
 const faqs = [
